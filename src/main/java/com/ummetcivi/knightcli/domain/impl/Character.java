@@ -8,7 +8,7 @@ import java.util.function.BiFunction;
 
 class Character implements Serializable {
 
-    private static final long serialVersionUID = 4092730376448663887L;
+    private static final long serialVersionUID = -7528122046512627390L;
     private final CharacterType characterType;
     private final Mob mob;
     private int attackPower;

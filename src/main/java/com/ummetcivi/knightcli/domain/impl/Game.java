@@ -6,7 +6,7 @@ import java.util.function.BiFunction;
 
 class Game implements Serializable {
 
-    private static final long serialVersionUID = 7748109623360944186L;
+    private static final long serialVersionUID = -6206790325705965162L;
 
     private Character player;
     private Character opponent;

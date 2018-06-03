@@ -13,4 +13,15 @@ public class ReflectionUtils {
             System.err.println("Field could not found");
         }
     }
+
+    public static Object getField(Object dest, String fieldName) {
+        try {
+            Field field = dest.getClass().getDeclaredField(fieldName);
+            field.setAccessible(true);
+            return field.get(dest);
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            System.err.println("Field could not found");
+        }
+        return null;
+    }
 }

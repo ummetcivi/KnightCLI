@@ -9,9 +9,9 @@ import java.util.stream.IntStream;
 
 public class GameMapImpl implements GameMap {
 
+    private static final long serialVersionUID = -2263747038655781061L;
     private int width;
     private int height;
-
     private Mob[][] mobMatrix;
 
     private int playerXIndex = -1;
