@@ -1,0 +1,85 @@
+package com.ummetcivi.knightcli.domain.impl;
+
+public enum Mob {
+    WORM(4, 5, 7, 5),
+    BANDICOOT(3, 10, 11, 7),
+    EARTH_WORM(4, 10, 11, 7),
+    BLOOD_WORM(5, 20, 20, 16),
+    WILD_BANDICOOT(4, 26, 26, 22),
+    CARRION_CRAWLER(6, 31, 32, 29),
+    KECOON(3, 31, 32, 29),
+    RABID_BANDICOOT(7, 46, 57, 65),
+    BULCAN(11, 57, 99, 101),
+    CANNIBAL_BANDICOOT(9, 57, 99, 101),
+    KECOON_FIGHTER(10, 62, 114, 123),
+    WILD_BULCAN(14, 67, 131, 147),
+    KECOON_RAIDER(13, 72, 149, 173),
+    BULKY_BULCAN(17, 78, 169, 202),
+    KECOON_WARRIOR(16, 83, 190, 233),
+    KECOON_CAPTAIN(25, 138, 352, 382),
+    KILLER_BEATLE(26, 172, 411, 379),
+    WEREWOLF(35, 132, 625, 519),
+    DECAYED_ZOMBIE(52, 207, 598, 573),
+    GLOOMWING(47, 138, 512, 573),
+    LYCAN(43, 144, 745, 631),
+    SCORPION(47, 224, 709, 692),
+    BATTALION(68, 233, 769, 757),
+    LOUP_GAROU(51, 155, 879, 757),
+    PINCERS_SCORPION(83, 306, 970, 973),
+    UNDYING(110, 306, 970, 973),
+    DARK_EYES(89, 210, 1193, 1052),
+    SMILODON(164, 201, 1564, 1628),
+    DUS_ORC(285, 288, 617, 990),
+    ORC_HUNTER(190, 288, 617, 990),
+    POOKA(139, 252, 1073, 990),
+    SABER_TOOTH(229, 236, 1992, 2108),
+    APE(203, 412, 3255, 2055),
+    DEATH_KNIGHT(241, 324, 2846, 3212),
+    GOBLIN_BOUNCER(200, 303, 1601, 1338),
+    MEGANTHEREON(289, 259, 2490, 2677),
+    SCOLAR(255, 331, 3002, 2834),
+    KONGAU(601, 529, 4378, 3342),
+    LARD_ORC(500, 360, 1058, 1761),
+    TRENANT(977, 315, 3577, 1573),
+    BARON(359, 374, 4056, 4684),
+    GARUNA(755, 572, 5316, 4106),
+    CARDINAL(396, 388, 4455, 4315),
+    ANCIENT(1209, 405, 4773, 2877),
+    ASH_KNIGHT(416, 396, 4664, 5437),
+    HAUNGA(832, 594, 5831, 4531),
+    DERUVISH(1045, 216, 10890, 6862),
+    LAMIA(836, 432, 2904, 3350),
+    DRAGON_TOOTH_SKELETON(645, 468, 7123, 8504),
+    HARPY(1180, 504, 16167, 12952),
+    TROLL(2098, 315, 21556, 12952),
+    HOP_GOBLIN(781, 607, 6709, 4483),
+    LAMENTATION(1805, 720, 7632, 6300),
+    RAVEN_HARPY(1918, 648, 27496, 18406),
+    TROLL_WARRIOR(3760, 360, 38190, 18406),
+    CRIMSON_WING(2956, 810, 43835, 24940),
+    TROLL_BERSERKER(6223, 405, 41748, 24940),
+    FALCON(4367, 990, 66460, 34000),
+    STONE_GOLEM(3119, 720, 11000, 12500),
+    TROLL_CAPTAIN(9705, 450, 55384, 32554),
+    GIANT_GOLEM(4335, 990, 14000, 14200),
+    SERVANTOF_ISILOON(5353, 1345, 33999, 20005),
+    DARK_MARE(7065, 2088, 49847, 26727),
+    DEATH_MARE(9248, 2511, 78506, 28941);
+
+    static final Mob[] VALUES = Mob.values();
+    final int attackPower;
+    final int defence;
+    final int hp;
+    final int exp;
+
+    Mob(int attackPower, int defence, int hp, int exp) {
+        this.attackPower = attackPower;
+        this.defence = defence;
+        this.hp = hp;
+        this.exp = exp;
+    }
+
+    public static Mob getByIndex(int index) {
+        return VALUES[index];
+    }
+}
