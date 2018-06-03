@@ -60,7 +60,7 @@ public class GameContextImpl implements GameContext {
 
     @Override
     public void createCharacter(String characterId) {
-        int characterIndex = Integer.valueOf(characterId);
+        int characterIndex = Integer.valueOf(characterId) - 1;
         this.game.character(CharacterType.values()[characterIndex]);
     }
 
