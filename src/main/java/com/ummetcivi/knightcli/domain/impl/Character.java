@@ -86,11 +86,11 @@ class Character implements Serializable {
         if (exp + expToAdd > maxExp) {
             level++;
             exp = exp + expToAdd - maxExp;
-            reCalculateStats();
         } else {
             exp += expToAdd;
         }
 
+        reCalculateStats();
     }
 
     private void reCalculateStats() {
